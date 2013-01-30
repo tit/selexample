@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: Controller::Site::Case
+  
+    &mdash; Documentation by YARD 0.8.3
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../';
+  framesUrl = "../../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../_index.html">Index (C)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Controller.html" title="Controller (module)">Controller</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Site.html" title="Controller::Site (module)">Site</a></span></span>
+     &raquo; 
+    <span class="title">Case</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Module: Controller::Site::Case
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/controller/site/case/auth.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Case</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#auth-class_method" title="auth (class method)">+ (Hash) <strong>auth</strong>(options) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>auth.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="auth-class_method">
+  
+    + (<tt>Hash</tt>) <strong>auth</strong>(options) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>auth</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><span class='rubyid_result identifier id'>result</span> <span class='assign token'>=</span> <span class='rubyid_case case kw'>case</span> <span class='symbol val'>:browser</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='symbol val'>:browser</span>
+              <span class='symbol val'>:username</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;username&quot;</span><span class='comma token'>,</span>
+              <span class='symbol val'>:password</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;password&quot;</span><span class='comma token'>,</span>
+              <span class='symbol val'>:base_url</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;http://example.com&quot;</span><span class='comma token'>,</span>
+              <span class='symbol val'>:screencast</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;screenshot.png&quot;</span><span class='comma token'>,</span>
+              <span class='symbol val'>:screencast</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;screencast.mov&quot;</span>
+<span class='comment val'>#=&gt; {</span>
+        <span class='symbol val'>:status</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_true true kw'>true</span><span class='comma token'>,</span>
+        <span class='symbol val'>:error</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_nil nil kw'>nil</span>
+        <span class='symbol val'>:value</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='symbol val'>:valid</span><span class='comma token'>,</span> <span class='symbol val'>:invalid</span> <span class='rubyid_or or kw'>or</span> <span class='symbol val'>:empty</span>
+    <span class='rbrace token'>}</span>
+</pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>options</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:browser</span>
+          <span class="type">(<tt>Symbol</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+        </li>
+      
+        <li>
+          <span class="name">:username</span>
+          <span class="type">(<tt><span class='object_link'><a href="../../String.html" title="String (class)">String</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+        </li>
+      
+        <li>
+          <span class="name">:password</span>
+          <span class="type">(<tt><span class='object_link'><a href="../../String.html" title="String (class)">String</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+        </li>
+      
+        <li>
+          <span class="name">:base_url</span>
+          <span class="type">(<tt><span class='object_link'><a href="../../String.html" title="String (class)">String</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+        </li>
+      
+        <li>
+          <span class="name">:screenshot</span>
+          <span class="type">(<tt><span class='object_link'><a href="../../String.html" title="String (class)">String</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+        </li>
+      
+        <li>
+          <span class="name">:screencast</span>
+          <span class="type">(<tt><span class='object_link'><a href="../../String.html" title="String (class)">String</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/controller/site/case/auth.rb', line 37</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_auth identifier id'>auth</span> <span class='rubyid_options identifier id'>options</span>
+  <span class='rubyid_begin begin kw'>begin</span>
+    <span class='rubyid_raise identifier id'>raise</span> <span class='rubyid_ArgumentError constant id'>ArgumentError</span> <span class='rubyid_if if_mod kw'>if</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:browser</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_nil? fid id'>nil?</span> <span class='rubyid_or or kw'>or</span>
+        <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:username</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_nil? fid id'>nil?</span> <span class='rubyid_or or kw'>or</span>
+        <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:password</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_nil? fid id'>nil?</span> <span class='rubyid_or or kw'>or</span>
+        <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:base_url</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_nil? fid id'>nil?</span> <span class='rubyid_or or kw'>or</span>
+        <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:screenshot</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_nil? fid id'>nil?</span> <span class='rubyid_or or kw'>or</span>
+        <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:screencast</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_nil? fid id'>nil?</span>
+
+    <span class='comment val'># Headless</span>
+    <span class='comment val'>#headless = Headless.new</span>
+    <span class='comment val'>#headless.start</span>
+    <span class='comment val'>#headless.video.start_capture</span>
+
+    <span class='comment val'># Selenium::WebDriver</span>
+    <span class='rubyid_driver identifier id'>driver</span> <span class='assign token'>=</span> <span class='rubyid_Selenium constant id'>Selenium</span><span class='colon2 op'>::</span><span class='rubyid_WebDriver constant id'>WebDriver</span><span class='dot token'>.</span><span class='rubyid_for identifier id'>for</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:browser</span><span class='rbrack token'>]</span>
+
+    <span class='comment val'># Selenium::WebDriver::Wait</span>
+    <span class='rubyid_wait identifier id'>wait</span> <span class='assign token'>=</span> <span class='rubyid_Selenium constant id'>Selenium</span><span class='colon2 op'>::</span><span class='rubyid_WebDriver constant id'>WebDriver</span><span class='colon2 op'>::</span><span class='rubyid_Wait constant id'>Wait</span><span class='dot token'>.</span><span class='rubyid_new identifier id'>new</span>
+
+    <span class='rubyid_result identifier id'>result</span> <span class='assign token'>=</span> <span class='rubyid_Controller constant id'>Controller</span><span class='colon2 op'>::</span><span class='rubyid_Site constant id'>Site</span><span class='dot token'>.</span><span class='rubyid_auth identifier id'>auth</span> <span class='symbol val'>:driver</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_driver identifier id'>driver</span><span class='comma token'>,</span>
+                                   <span class='symbol val'>:wait</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_wait identifier id'>wait</span><span class='comma token'>,</span>
+                                   <span class='symbol val'>:username</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:username</span><span class='rbrack token'>]</span><span class='comma token'>,</span>
+                                   <span class='symbol val'>:password</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:password</span><span class='rbrack token'>]</span><span class='comma token'>,</span>
+                                   <span class='symbol val'>:base_url</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:base_url</span><span class='rbrack token'>]</span>
+    <span class='rubyid_raise identifier id'>raise</span> <span class='rubyid_result identifier id'>result</span><span class='lbrack token'>[</span><span class='symbol val'>:error</span><span class='rbrack token'>]</span> <span class='rubyid_if if_mod kw'>if</span> <span class='notop op'>!</span><span class='rubyid_result identifier id'>result</span><span class='lbrack token'>[</span><span class='symbol val'>:status</span><span class='rbrack token'>]</span>
+
+    <span class='rubyid_result identifier id'>result</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span>
+        <span class='symbol val'>:status</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_true true kw'>true</span><span class='comma token'>,</span>
+        <span class='symbol val'>:error</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_nil nil kw'>nil</span><span class='comma token'>,</span>
+        <span class='symbol val'>:value</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_result identifier id'>result</span><span class='lbrack token'>[</span><span class='symbol val'>:value</span><span class='rbrack token'>]</span>
+    <span class='rbrace token'>}</span>
+
+    <span class='comment val'># Stop and discard video</span>
+    <span class='comment val'>#headless.video.stop_and_discard</span>
+
+    <span class='comment val'># Close Selenium::WebDriver</span>
+    <span class='rubyid_driver identifier id'>driver</span><span class='dot token'>.</span><span class='rubyid_close identifier id'>close</span>
+
+    <span class='comment val'># Close Headless</span>
+    <span class='comment val'>#headless.destroy</span>
+
+    <span class='rubyid_return return kw'>return</span> <span class='rubyid_result identifier id'>result</span>
+  <span class='rubyid_rescue rescue kw'>rescue</span> <span class='rubyid_Exception constant id'>Exception</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_exception identifier id'>exception</span>
+    <span class='rubyid_result identifier id'>result</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span>
+        <span class='symbol val'>:status</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_false false kw'>false</span><span class='comma token'>,</span>
+        <span class='symbol val'>:error</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_exception identifier id'>exception</span><span class='dot token'>.</span><span class='rubyid_message identifier id'>message</span><span class='comma token'>,</span>
+        <span class='symbol val'>:value</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_nil nil kw'>nil</span>
+    <span class='rbrace token'>}</span>
+
+    <span class='comment val'># Save screencast and screenshot</span>
+    <span class='comment val'>#defined = defined? headless</span>
+    <span class='comment val'>#headless.take_screenshot options[:screenshot] if !defined.nil?</span>
+    <span class='comment val'>#headless.video.stop_and_save options[:screencast] if !defined.nil?</span>
+
+    <span class='comment val'># Close Selenium::WebDriver</span>
+    <span class='rubyid_defined identifier id'>defined</span> <span class='assign token'>=</span> <span class='rubyid_defined? defined kw'>defined?</span> <span class='rubyid_driver identifier id'>driver</span>
+    <span class='rubyid_driver identifier id'>driver</span><span class='dot token'>.</span><span class='rubyid_close identifier id'>close</span> <span class='rubyid_if if_mod kw'>if</span> <span class='notop op'>!</span><span class='rubyid_defined identifier id'>defined</span><span class='dot token'>.</span><span class='rubyid_nil? fid id'>nil?</span>
+
+    <span class='comment val'># Close Headless</span>
+    <span class='comment val'>#defined = defined? headless</span>
+    <span class='comment val'>#headless.destroy if !defined.nil?</span>
+
+    <span class='rubyid_return return kw'>return</span> <span class='rubyid_result identifier id'>result</span>
+  <span class='rubyid_end end kw'>end</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Wed Jan 30 04:23:08 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.3 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>
